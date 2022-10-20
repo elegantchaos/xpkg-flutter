@@ -4,7 +4,7 @@ let package = Package()
 try package.run(
     links: [
         .script("setup"),
-        .script("setup.fish", to: "~/.config/fish/conf.d/com.elegantchaos.xpkg-flutter.fish"),
+        .script("setup", ext: "fish", to: "~/.config/fish/conf.d/com.elegantchaos.flutter.fish"),
         .function("flutter"),
     ]
 )
